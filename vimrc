@@ -37,7 +37,7 @@ set hlsearch    "hilight searches by default
 set wrap        "dont wrap lines
 set linebreak   "wrap lines at convenient points
 
-set textwidth=79
+set textwidth=119
 
 if has ('unnamedplus')
   set clipboard=unnamedplus
@@ -584,3 +584,5 @@ endif
 " Configure browser for haskell_doc.vim
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
+
+autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab
